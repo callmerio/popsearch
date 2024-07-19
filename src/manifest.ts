@@ -11,9 +11,8 @@ export default defineManifest({
   manifest_version: 3,
   icons: {
     16: 'img/logo-16.png',
-    32: 'img/logo-34.png',
+    34: 'img/logo-34.png',
     48: 'img/logo-48.png',
-    128: 'img/logo-128.png',
   },
   action: {
     default_popup: 'popup.html',
@@ -40,7 +39,7 @@ export default defineManifest({
       matches: [],
     },
   ],
-  permissions: ['sidePanel', 'storage'],
+  permissions: ['activeTab', 'storage'],
   chrome_url_overrides: {
     newtab: 'newtab.html',
   },
